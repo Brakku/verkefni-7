@@ -1,0 +1,549 @@
+.clearfix {
+    overflow: auto;
+}
+
+body{
+    background-color: blue;
+
+    background-color: #f1f1f1;
+}
+
+.container{
+    background-color: rgb(240, 240, 240);
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+    border: black solid 5px;
+    background-color: #000080;
+}
+
+.grid-container > div {
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+border: black solid;
+grid-column: 1 / span 2;
+border: black solid;
+
+
+}
+
+*,
+*:before,
+*:after{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.popup{
+background-color: #ffffff;
+width: 520px;
+padding: 30px 40px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+border-radius: 8px;
+font-family: "Poppins",sans-serif;
+display: none; 
+text-align: center;
+overflow: visible;
+z-index: 200;
+}
+.popup button{
+display: block;
+margin:  0 0 20px auto;
+background-color: transparent;
+font-size: 30px;
+color: #ffffff;
+background: #03549a;
+border-radius: 100%;
+width: 40px;
+height: 40px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.popup h2{
+margin-top: -20px;
+}
+.popup p{
+font-size: 14px;
+text-align: justify;
+margin: 20px 0;
+line-height: 25px;
+}
+.a1{
+display: block;
+width: 150px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+background-color: #0f72e5;
+border-radius: 20px;
+color: #ffffff;
+text-decoration: none;
+padding: 8px 0;
+}
+.overlay{
+position: fixed;
+display: block;
+top: -30em;
+bottom: 0;
+left: -30em;
+right: 0;
+background-color: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 1;
+z-index: 100;
+width: 100em;
+height: 90em;
+pointer-events:none
+}
+.item1 {
+grid-column: 1 / span 2;
+
+background-color: dodgerblue;
+background-image: url(geimmind.jpg);
+overflow: auto;
+color: white;
+min-height: 10em;
+font-size: 1.4em;
+background-position: center top 20%;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.item3{
+    padding: 0px;
+}
+
+.grid-container > .breiting{
+    padding: 0px;
+    border: none;
+}
+
+button{
+    height: 100%;
+}
+
+header{
+    background-color: gray;
+    width: 100%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f1f1f1;
+    flex-grow: 1;
+}
+
+.flex-container > div {
+display: inline-block;
+background-color: #f1f1f1;
+width: 100%;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+max-height: 3em;
+overflow: hidden;
+}
+.flex-container > div > p{
+    margin-top: 10px;
+}
+.right{
+    float: right;
+    overflow: hidden;
+    margin: auto;
+
+}
+p{
+    margin: 0px;
+}
+.mindin{
+    background-color: transparent;
+    height: auto;
+    max-width: 3em;
+    float: left;
+    margin-left: 1em;
+}
+.clickbox{
+    background: rgb(0,244,255);
+    display: flex;
+    background: linear-gradient(232deg, rgba(0,244,255,1) 0%, rgba(0,135,187,1) 100%);
+    height: 2.5em;
+    padding: auto;
+    width: 70%;
+    margin: auto;
+    border-radius: 25px;
+    justify-content: center;
+
+}
+.center{
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.layer1{
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 7em;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.layer2{
+    background-color: red;
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.layer3{
+    background-color: yellow;
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.sale{
+    margin: 0px;
+    color: red;
+}
+.slideset1 > p{
+    size: 2.5em;
+    color: red;
+}
+.item1{
+    font-size: 1.4em;
+}
+
+.flex-container > .cuontomdiv {
+    float: right;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 1em;
+    max-width: 2em;
+    margin-right: 1em;
+}
+td:first-child {
+    padding-left: 7,5px;
+}
+.grid-container > table{
+    padding: 0px;
+}
+  
+  
+
+  
+  tr:nth-child(even) {
+    background-color: #dbdbdb;
+  }
+
+
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    .sale{
+      font-size: 1em;
+    }
+
+    .layer1{
+      height: 11em;
+    }
+    .bigtext{
+      font-size: 1.5em;
+    }
+    .center{
+      font-size: 1em;
+      margin: auto;
+    }
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+table{
+    margin: auto;
+}
+  
+
+
+
+
+@media only screen and (max-width: 40em) {
+    .grid-container > .taflan{
+   
+    font-size: 16px;
+}
+}
+td:last-child{
+    padding-right: 8px;
+  } 
+
+
+@media only screen and (max-width: 55em) {
+
+    .flex-container > .right{
+        display: none;
+    }
+
+    .flex-container > .cuontomdiv {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width: 55em) {
+    .flex-container > .cuontomdiv {
+        display: none;
+    }
+}
+
+table{
+    width: 100%;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 220px;
+  overflow: visible;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdown-content>a{
+  color: black;
+  background-color: gainsboro;
+  z-index: 2;
+}
+.flex-container>.cuontomdiv{
+  overflow: visible;
+  margin: auto;
+  margin-top: auto;
+  max-width: 6em;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  
+}
+.titlehlutur{
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.sosial{
+  background-color: green;
+  border: solid black 5px;
+  margin-top: 1em;
+}
+
+.mindirnar{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.mindirnar > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.mindin2{
+  background-color: transparent;
+  height: auto;
+  max-width: 3em;
+  float: left;
+  margin: 1em;
+}
+
+.slide1{
+  justify-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.slideset1{
+  padding: auto;
+}
+
+*{
+  transition: all 2s ease;
+}
+
+
+.dropdown-content>a>img{
+  transition: all 2s ease;
+}
+.dropdown-content>a>img:hover{
+  rotate: 90deg;
+}
+.dropdown-content>a{
+  transition: all 1s ease;
+}
+.dropdown-content>a:hover{
+  background-color: rgb(0, 213, 255);
+}
+.flex-container>.smol{
+  width: 70%;
+}
+.right>img,.right>a>img{
+  transition: all 2s ease;
+}
+
+.right>img:hover,.right>a>img:hover,.smol>a>img:hover{
+  rotate: 90deg;
+}
+
+.coolthing:hover{
+  background-color: aqua;
+  transform-origin: left;
+}
+
+
+body{
+  transition: padding 0s;
+}
+
+
+.displayornot{
+  transition: opacity 1s ease;
+  display: none;
+  opacity: 0;
+
+
+}
+*::-webkit-scrollbar {
+  display: none;
+}

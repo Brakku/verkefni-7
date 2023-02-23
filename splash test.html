@@ -1,0 +1,255 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vefsíðan</title>
+        <link rel="stylesheet" href="splash style.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <link rel="stylesheet" href="stílsíða.css">
+        
+
+    </head>
+
+    <body style="overflow: visable;" id="myDiv">
+
+        <!-- splash screanin er hérna -->
+
+        <div class="load">
+            <pre class="term">breki@dev:~$ </pre>
+        </div>
+
+        <div class="displayornot" id="displayer">
+            
+            <!-- hér byrjar venjulegi kóðin -->
+
+            <div class="container" style="width: 80%; margin: auto;padding-top: 0em;">
+
+                <div class="grid-container">
+
+                    <div class="overlay"></div>
+
+                    <!-- anoying adið sem kemur fyrst -->
+
+                    <div class="popup" style="padding: 20px 20px;">
+
+                        <button id="close" onclick= "clickEvent()">&times;</button>
+                        <h2>Automatic Pop-Up</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+                        </p>
+                        <a class="a1" href="#" >Let's Go</a>
+
+                    </div>
+
+                    <!-- Nav barin -->
+                    
+                    <header style="padding-bottom: 10px;background-color: transparent;">
+
+                        <section class="flex-container" >
+
+                            <div class="smol">
+                                <a href="index.html"><img class="mindin" src="Logo Breki.svg" alt=""></a>
+                            </div>
+                            
+                            <div class="right" style="margin: auto;">
+
+                                <img src="icomoon\rocket thing\SVG\info-with-circle.svg" style="display: inline;">
+                                <p class="coolthing" style="display: inline;">
+                                    <a href="" style="text-decoration: none; color: black;">About us</a>
+                                </p>
+                                
+                            </div>
+
+                            <div class="right" style="margin: auto;">
+
+                                <img src="icomoon\rocket thing\SVG\users.svg" style="display: inline; max-width:25px">
+                                <p class="coolthing" style="display: inline;">
+                                    <a href="" style="text-decoration: none; color: black;">Assistance</a>
+                                </p>
+
+                            </div>
+
+                            <div class="right" style="margin: auto;">
+
+                                <a href="formpage.html" style="color: transparent;">
+                                    <img src="icomoon\rocket thing\SVG\rocket.svg" style="display: inline; max-width:25px">
+                                </a>
+                                <p class="coolthing" style="display: inline;">
+                                    <a href="formpage.html" style="text-decoration: none; color: black;">Booking</a>
+                                </p>
+
+                            </div>
+
+                            <!-- menuið sem kemur þegar skjárin er lítill -->
+
+                            <div class="cuontomdiv">
+
+                                <div class="dropdown">
+
+                                    <button onclick="myFunction()" class="dropbtn" style="padding-top: 23px;">
+                                        <img src="Hamburger_icon.png" style="max-width: 3em; pointer-events: none;">
+                                    </button>
+
+                                    <div id="myDropdown" class="dropdown-content" style="position: relative; right: 40px;">
+                                        <a href="index.html"><img src="icomoon\rocket thing\SVG\home3.svg" style="max-width: 25px;margin-right: 5px;">Home</a>
+                                        <a href="#home"><img src="icomoon\rocket thing\SVG\info-with-circle.svg" style="margin-right: 5px;">About us</a>
+                                        <a href="#about"><img src="icomoon\rocket thing\SVG\users.svg" style="margin-right: 5px;max-width: 30px;" >Assistance</a>
+                                        <a href="formpage.html"><img src="icomoon\rocket thing\SVG\rocket.svg" style="margin-right: 5px;">Booking </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+
+                    <!-- miðjubúturin með titlinum -->
+            
+                    <div class="item1" style="padding-top: 10px; padding-bottom: 10px;">
+                        
+                        <h1 class="bigtext">
+                            Welcome To The Space Travel Co. Website
+                        </h1>
+                        <div class="clickbox" style="align-content: center; justify-content: center;">
+                            <a href="formpage.html" class="center" style="color: white; ">
+                                Order Here
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Taflan -->
+            
+                    <table style="padding-top: 10px; padding-bottom: 10px;">
+                        <caption style="color: white;">Flight schedule</caption>
+                        <thead>
+                            <tr>
+                            <th scope="col">Shutle</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Departure</th>
+                            <th scope="col">Arival</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td data-label="Plane"style="padding-left: 7,5px;">R-154683</td>
+                            <td data-label="Destination">Mars</td>
+                            <td data-label="Departure">25,2,2462</td>
+                            <td data-label="Arival">29,2,2462</td>
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Plane"style="padding-left: 7,5px;">U.S.S. Voager</td>
+                            <td data-label="Destination">Jupiter</td>
+                            <td data-label="Departure">2,3,2462</td>
+                            <td data-label="Arival">15,6,2462</td>
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Plane" style="padding-left: 7,5px;">E.S.A. 16452</td>
+                            <td data-label="Destination">Kepler V</td>
+                            <td data-label="Departure">20,7,2463</td>
+                            <td data-label="Arival">22,9,2529</td>
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Plane"style="padding-left: 7,5px;">P.R. 004235</td>
+                            <td data-label="Destination">Sirius</td>
+                            <td data-label="Departure">12,8,2463</td>
+                            <td data-label="Arival">5,1,2661</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- ad svæðið -->
+                
+                    <div class="breiting" style="padding-top: 15px;">
+
+                        <div class="layer1">
+
+                            <div class="layer2">
+
+                                <div class="layer3">
+
+                                    <!-- slideshowin -->
+
+                                    <div id=slideset3>
+
+                                        <div>
+                                            <h1 class="sale">
+                                                SALE!
+                                            </h1>
+                                            <p>
+                                                Jupiter station 30% Discount!
+                                            </p>
+                                            <p>
+                                                Limited Time Only 30 Left!
+                                            </p>
+
+                                        </div>
+
+                                        <div>
+                                            
+                                            <h1 class="sale">
+                                                Warning!
+                                            </h1>
+                                            <p>
+                                                Do not go to Lambda Station
+                                            </p>
+                                            <p>
+                                                Non human organics detected
+                                            </p>
+
+                                        </div>
+
+                                        <div>
+
+                                            <h1 class="sale">Station Construction</h1>
+                                            <p>
+                                                New Station in Kepler sector nerly compleate
+                                            </p>
+                                            <p>
+                                                Experts say Kepler will prosper
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    
+                                    <h1 class="sale">
+                                        SALE!
+                                    </h1>
+                                    <p>
+                                        Jupiter station 30% Discount!
+                                    </p>
+                                    <p>
+                                        Limited Time Only 30 Left!
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bútur þar sem það væru linkar á vefsíður -->
+                
+                    <section class="sosial">
+
+                            <div class="titlehlutur">
+                                <h2>Contact Us</h4>
+                            </div>
+
+                            <div class="mindirnar">
+                                <a href="index.html"><img class="mindin2" src="icomoon\rocket thing\SVG\facebook2.svg" alt=""></a>
+                                <a href="index.html"><img class="mindin2" src="icomoon\rocket thing\SVG\instagram.svg" alt=""></a>
+                                <a href="index.html"><img class="mindin2" src="icomoon\rocket thing\SVG\twitter.svg" alt=""></a>
+                                <a href="index.html"><img class="mindin2" src="icomoon\rocket thing\SVG\youtube.svg" alt=""></a>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Java skript lódað hér -->
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="Java code splash.js"></script>
+
+    </body>
+</html>

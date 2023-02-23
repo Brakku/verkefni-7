@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"> 
+  <title>Verkefni 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stílsíða form.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <link rel="stylesheet" href="stílsíða.css">
+
+</head>
+
+
+<body>
+    
+    <div class="container" style="width: 80%; margin: auto;">
+        <style>
+            .flex-container>.smol{
+                width: 70%;
+            }
+        </style>
+
+        <div class="grid-container">
+            <header style="padding-bottom: 10px;background-color: transparent;">
+                <style>
+                    .flex-container>.smol{
+                        width: 70%;
+                    }
+                    .right>img,.right>a>img{
+                        transition: all 2s ease;
+                    }
+
+                    .right>img:hover,.right>a>img:hover,.smol>a>img:hover{
+                        rotate: 90deg;
+                    }
+
+                    .coolthing:hover{
+                        background-color: aqua;
+                        transform-origin: left;
+                    }
+                </style>
+                <section class="flex-container" >
+                    <div class="smol">
+                        <a href="index.html"><img class="mindin" src="Logo Breki.svg" alt=""></a>
+                    </div>
+                    
+                    <div class="right" style="margin: auto;">
+                        <img src="icomoon\rocket thing\SVG\info-with-circle.svg" style="display: inline;">
+                        <p class="coolthing" style="display: inline;">
+                            <a href="" style="text-decoration: none; color: black;">About us</a>
+                        </p>
+                        
+                    </div>
+                    <div class="right" style="margin: auto;">
+                        <img src="icomoon\rocket thing\SVG\users.svg" style="display: inline; max-width:25px">
+                        <p class="coolthing" style="display: inline;">
+                            <a href="" style="text-decoration: none; color: black;">Assistance</a>
+                        </p>
+                    </div>
+                    <div class="right" style="margin: auto;">
+                        <a href="formpage.html" style="color: transparent;">
+                            <img src="icomoon\rocket thing\SVG\rocket.svg" style="display: inline; max-width:25px">
+                        </a>
+                        <p class="coolthing" style="display: inline;">
+                            <a href="formpage.html" style="text-decoration: none; color: black;">Booking</a>
+                        </p>
+                    </div>
+                    <div class="cuontomdiv">
+                        <style>
+                            .dropdown-content>a>img{
+                                transition: all 2s ease;
+                            }
+                            .dropdown-content>a>img:hover{
+                                rotate: 90deg;
+                            }
+                            .dropdown-content>a{
+                                transition: all 1s ease;
+                            }
+                            .dropdown-content>a:hover{
+                                background-color: rgb(0, 213, 255);
+                            }
+                        </style>
+
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" style="padding-top: 23px;">
+                                <img src="Hamburger_icon.png" style="max-width: 3em; pointer-events: none;">
+                            </button>
+                            <div id="myDropdown" class="dropdown-content" style="position: relative; right: 40px;">
+                              <a href="index.html"><img src="icomoon\rocket thing\SVG\home3.svg" style="max-width: 25px;margin-right: 5px;">Home</a>
+                              <a href="#home"><img src="icomoon\rocket thing\SVG\info-with-circle.svg" style="margin-right: 5px;">About us</a>
+                              <a href="#about"><img src="icomoon\rocket thing\SVG\users.svg" style="margin-right: 5px;max-width: 30px;" >Assistance</a>
+                              <a href="formpage.html"><img src="icomoon\rocket thing\SVG\rocket.svg" style="margin-right: 5px;">Booking </a>
+                            </div>
+                          </div>
+                        <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                                }
+                            }
+                            }
+                        }
+                        </script>
+                    </div>
+                    
+                </section>
+            </header>
+            
+            <div class="formdiv">
+                <label for="fname" style="width: auto;color: white;">Please input your infromation</label><br>
+                    <form action="/action_page.php">
+
+                        <section class="colomb">
+                            <div>
+                                <input type="text" placeholder="Your name here"><br>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Your email here"><br>
+                            </div>
+                            <div>
+                                <input type="date" ><br>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Your phone here"><br>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Your blood type here"><br>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Your DNA here"><br>
+                            </div>                            
+                        </section>
+                        
+                        <section>
+                            <div>
+                                <input type="checkbox" style="display: inline-block;width: auto;" > <p style="display: inline; color: white;">Terms and Services</p><br>
+                            </div>
+                            <select name="where to go" style="height: 45px;">
+                                <option value="volvo"></option>
+                                <option value="volvo">Mercury</option>
+                                <option value="saab">Venus</option>
+                                <option value="opel">Earth</option>
+                                <option value="audi">Mars</option>
+                                <option value="audi">Jupiter</option>
+                                <option value="audi">Saturnus</option>
+                                <option value="audi">Uranus</option>
+                                <option value="audi">Neptune</option>
+                                <option value="audi">Kepler station</option>
+                              </select>
+                            <div>
+                                <input type="submit" style="width: 40%;background-color: rgb(230, 230, 230);"><br>
+                            </div>
+                        </section>
+                  </form> 
+            </div>
+               
+        
+        </div>
+    </div>
+</body>

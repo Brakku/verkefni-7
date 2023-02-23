@@ -1,0 +1,17 @@
+#slideset3 {height: 10em; position: relative;
+    overflow: hidden}
+#slideset3 > * {height: 100%; box-sizing: border-box;
+    overflow: hidden}
+
+#slideset3 > *:first-child {
+    animation: 12s autoplay3 infinite ease-in-out}
+@keyframes autoplay3 {
+    0% {margin-top: 10em}
+    4% {margin-top: 0em}
+    31% {margin-top: 0em}
+    35% {margin-top: -10em}
+    64% {margin-top: -10em}
+    68% {margin-top: -20em}
+    96% {margin-top: -20em}
+    100% {margin-top: -30em}
+}

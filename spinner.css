@@ -1,0 +1,36 @@
+.box {
+    height: 100px;
+    width: 250px;
+    background: white;
+    border: 5px black solid;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+
+    background-color: rgba(0, 247, 255, 0.497);
+    width: 100%;
+    color: white;
+    height: 100%;
+
+    left: -270px;
+    margin-left: 520px;
+    bottom: 0;
+    z-index: 1;
+    transition: left 300ms linear, margin-left 300ms ease-out;
+}
+
+.box:hover .overlay {
+    left: 0;
+    margin-left: 0;
+    z-index: -1;
+    transition: left 300ms ease-out;
+}
+
+.yfir{
+    position: absolute;
+    z-index: 20;
+}
